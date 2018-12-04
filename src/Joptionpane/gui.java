@@ -64,7 +64,14 @@ public class gui extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         if(e.getSource() == Cal) {
-            
+
+            String convert1 = String.valueOf(Integer.parseInt(String.valueOf(First_Num.getText()), Integer.parseInt(First_Base.getText())));
+            String convert2 = String.valueOf(Integer.parseInt(String.valueOf(Second_Num.getText()), Integer.parseInt(Second_Base.getText())));
+            String x = convert1 + convert2;
+
+           // System.out.println(Integer.toString(Integer.parseInt(x), 2));
+            Integer.toString(Integer.parseInt(Integer.toString(Integer.parseInt(x),2)));
+
 
         }
     }
