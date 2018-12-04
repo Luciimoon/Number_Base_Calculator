@@ -9,7 +9,7 @@ public class Main {
             gui Frame = new gui();
             Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             Frame.setLocationRelativeTo(null);
-            Frame.setSize(275,180);
+            Frame.setSize(575,180);
             Frame.setVisible(true);
         }
     }
