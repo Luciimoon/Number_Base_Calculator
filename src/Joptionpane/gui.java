@@ -18,6 +18,7 @@ public class gui extends JFrame implements ActionListener {
         setLayout(new GridBagLayout());
         GridBagConstraints layout = new GridBagConstraints();
 
+
         //do dis thing
         First_Num_Label = new JLabel("First num");
         Second_Num_Label = new JLabel("Second num");
@@ -25,15 +26,16 @@ public class gui extends JFrame implements ActionListener {
         Second_Base_Label = new JLabel("Second Base");
         End_Base_Label = new JLabel("End Base");
 
-        First_Num = new JTextField("First num",15);
-        End_Base = new JTextField("Ending Base");
+        First_Num = new JTextField(15);
+        End_Base = new JTextField(15);
         text = new JLabel("+");
-        Second_Num = new JTextField("Second num",15);
-        First_Base = new JTextField("First Base");
-        Second_Base = new JTextField("Second  base");
+        Second_Num = new JTextField(15);
+        First_Base = new JTextField(15);
+        Second_Base = new JTextField(15);
         end = new JTextField("answer",15);
         Cal = new JButton("Calculate");
         end.setEditable(false);
+        Cal.setBackground(Color.pink);
 
 
         layout.gridx = 0;
@@ -54,7 +56,7 @@ public class gui extends JFrame implements ActionListener {
 
         layout.gridx = 0;
         layout.gridy = 2;
-        add(Second_Base_Label, layout);
+        add(First_Base_Label, layout);
         layout.gridx = 1;
         layout.gridy = 2;
         add(First_Base, layout);
@@ -66,6 +68,10 @@ public class gui extends JFrame implements ActionListener {
         add(Second_Base, layout);
 
 
+
+        layout.gridx = 0;
+        layout.gridy = 3;
+        add(End_Base_Label,layout);
         layout.gridx = 1;
         layout.gridy = 3;
         add(End_Base,layout);
