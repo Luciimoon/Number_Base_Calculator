@@ -1,4 +1,4 @@
-package Joptionpane;
+package Jframe_gui;
 
 import javax.swing.*;
 import java.awt.*;
